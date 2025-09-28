@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUND - Digital Products & AI Solutions</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; /* A light grey background */
+        }
+        /* Custom styles for the hexagon pattern */
+        .hexagon-pattern {
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.05));
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Header & Navigation -->
+        <header class="py-4 sticky top-4 z-50">
+            <div class="bg-white/90 backdrop-blur-md rounded-full shadow-md px-8">
+                 <nav class="flex justify-between items-center py-3">
+                    <!-- Logo -->
+                    <div class="flex items-center space-x-2">
+                         <svg class="h-8 w-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                        <span class="text-2xl font-bold text-gray-900">NUND</span>
+                    </div>
+
+                    <!-- Desktop Navigation Links -->
+                    <ul class="hidden lg:flex items-center space-x-8 text-sm font-medium">
+                        <li><a href="#" class="text-gray-900 border-b-2 border-gray-900 pb-2">Home</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">About</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Events</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Careers</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Portfolio</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
+                    </ul>
+
+                    <!-- Right side buttons -->
+                    <div class="flex items-center space-x-6">
+                        <button class="hidden sm:flex items-center text-gray-500 hover:text-gray-900 transition-colors duration-300 text-sm font-medium">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            <span>EN</span>
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <a href="#" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-gray-700 transition-all duration-300 text-sm">
+                            Talk to us
+                        </a>
+                        <!-- Mobile Menu Button -->
+                        <button id="mobile-menu-button" class="lg:hidden text-gray-900">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 p-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <svg class="h-8 w-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    <span class="text-2xl font-bold text-gray-900">NUND</span>
+                </div>
+                <button id="close-mobile-menu">
+                    <svg class="w-8 h-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+            <ul class="mt-16 space-y-8 text-2xl font-bold text-center">
+                <li><a href="#" class="text-gray-900">Home</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Events</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Careers</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Portfolio</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Blog</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Main Hero Section -->
+        <main class="mt-10 lg:mt-16">
+            <div class="bg-white rounded-3xl shadow-sm p-8 sm:p-12 lg:p-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Text Content -->
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
+                            We build great <span class="text-yellow-500">digital products</span> and AI solutions.
+                        </h1>
+                        <p class="mt-6 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
+                            We partner with enterprises, startups, and governments worldwide to develop cutting-edge technology products and Artificial Intelligence solutions that help them achieve their goals.
+                        </p>
+                        <a href="#" class="inline-block mt-10 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            Book a free consultation &rarr;
+                        </a>
+                    </div>
+                    
+                    <!-- Image / Graphic Content -->
+                    <div class="hidden lg:flex justify-center items-center">
+                         <div class="hexagon-pattern">
+                            <svg width="450" height="400" viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="hexagon-clip">
+                                        <polygon points="250,0 450,115 450,335 250,450 50,335 50,115" />
+                                    </clipPath>
+                                    <pattern id="hex-pattern" patternUnits="userSpaceOnUse" width="100" height="115.47" x="0" y="0">
+                                        <g id="hexagon">
+                                            <polygon stroke-width="2" stroke="#e5e7eb" fill="rgba(255,255,255,0.8)" points="50,0 100,28.87 100,86.6 50,115.47 0,86.6 0,28.87" />
+                                        </g>
+                                    </pattern>
+                                </defs>
+                                
+                                <g opacity="0.1">
+                                    <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
+                                </g>
+
+                                <g transform="translate(40, 30)" opacity="0.2">
+                                     <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
+                                </g>
+
+                                 <g transform="translate(80, 60)" opacity="0.3">
+                                     <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
+                                </g>
+                                
+                                <g transform="translate(120, 90)" opacity="1">
+                                    <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
+                                </g>
+                            </svg>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- "What we can build for you" section -->
+            <section class="mt-24 py-16">
+                <div class="max-w-7xl mx-auto">
+                    <h2 class="text-4xl font-bold text-gray-900">What we can build for you</h2>
+                </div>
+
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-gray-50 rounded-3xl p-8 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:-translate-y-2">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-gray-900 w-3/4">Web, Mobile & Cloud Apps</h3>
+                            <span class="text-6xl font-extrabold text-gray-200">01</span>
+                        </div>
+                        <p class="mt-4 text-gray-600">We build secure, scalable web, mobile, and cloud apps that fast-track your business growth.</p>
+                    </div>
+                     <!-- Service Card 2 -->
+                    <div class="bg-gray-50 rounded-3xl p-8 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:-translate-y-2">
+                        <div class="flex justify-between items-start">
+                             <div class="w-3/4">
+                                <span class="text-xs font-bold bg-gray-800 text-white py-1 px-3 rounded-full">NUND AI</span>
+                                <h3 class="text-2xl font-bold text-gray-900 mt-2">Artificial Intelligence</h3>
+                            </div>
+                            <span class="text-6xl font-extrabold text-gray-200">02</span>
+                        </div>
+                        <p class="mt-4 text-gray-600">We build intelligent AI solutions for startups, enterprises and governments to transform their operations.</p>
+                    </div>
+                     <!-- Service Card 3 -->
+                    <div class="bg-gray-50 rounded-3xl p-8 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:-translate-y-2">
+                        <div class="flex justify-between items-start">
+                            <div class="w-3/4">
+                                <span class="text-xs font-bold bg-red-600 text-white py-1 px-3 rounded-full">NUND Studio</span>
+                                <h3 class="text-2xl font-bold text-gray-900 mt-2">UX Designs</h3>
+                            </div>
+                            <span class="text-6xl font-extrabold text-gray-200">03</span>
+                        </div>
+                        <p class="mt-4 text-gray-600">We craft holistic, people-friendly digital experiences so that your products are loved by users.</p>
+                    </div>
+                     <!-- Service Card 4 -->
+                    <div class="bg-gray-50 rounded-3xl p-8 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:-translate-y-2">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-gray-900 w-3/4">Extended Teams</h3>
+                            <span class="text-6xl font-extrabold text-gray-200">04</span>
+                        </div>
+                        <p class="mt-4 text-gray-600">Our team is your team. Whether it's your 1st or 100th developer, the team scales with you.</p>
+                    </div>
+                     <!-- Service Card 5 -->
+                    <div class="bg-gray-50 rounded-3xl p-8 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:-translate-y-2">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-gray-900 w-3/4">NUND MVP Factory</h3>
+                            <span class="text-6xl font-extrabold text-gray-200">05</span>
+                        </div>
+                        <p class="mt-4 text-gray-600">We fast track your MVPs with AI-driven development. Deliver your product fast to the market.</p>
+                    </div>
+                     <!-- Service Card 6 -->
+                    <div class="bg-gray-50 rounded-3xl p-8 transition-all duration-300 hover:bg-white hover:shadow-2xl hover:-translate-y-2">
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-2xl font-bold text-gray-900 w-3/4">Accessibility Implementation</h3>
+                            <span class="text-6xl font-extrabold text-gray-200">06</span>
+                        </div>
+                        <p class="mt-4 text-gray-600">Make your digital products accessible and compliant for your user base.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trusted By Section -->
+            <section class="mt-16 py-16">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-gray-900">Trusted by innovative companies</h2>
+                </div>
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center">
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo1" alt="Client Logo 1" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo2" alt="Client Logo 2" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo3" alt="Client Logo 3" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo4" alt="Client Logo 4" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo5" alt="Client Logo 5" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo6" alt="Client Logo 6" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-16 border-t">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-600">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <svg class="h-8 w-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                        <span class="text-2xl font-bold text-gray-900">NUND</span>
+                    </div>
+                    <p class="mt-4 text-sm">&copy; 2024 NUND. All rights reserved.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Services</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-yellow-500">Web Development</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Mobile Development</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">AI Solutions</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Company</h4>
+                    <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Careers</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Blog</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-900">Connect</h4>
+                     <ul class="mt-4 space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-yellow-500">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">Twitter</a></li>
+                        <li><a href="#" class="hover:text-yellow-500">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
+
+

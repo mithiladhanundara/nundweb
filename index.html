@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NUND - Digital Products & AI Solutions</title>
+    <title>NUND Global</title>
+    <link rel="icon" href="https://ik.imagekit.io/wdgrhxq3oh/NUND%20web/4.png?updatedAt=1759159383876" type="image/png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
+    <!-- Google Fonts - Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles for the Inter font */
+        /* Custom styles for the Manrope font */
+        html {
+            scroll-behavior: smooth;
+        }
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Manrope', sans-serif;
             background-color: #f8f9fa; /* A light grey background */
         }
         /* Custom styles for the hexagon pattern */
@@ -27,37 +31,36 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Header & Navigation -->
         <header class="py-4 sticky top-4 z-50">
-            <div class="bg-white/90 backdrop-blur-md rounded-full shadow-md px-8">
+            <div class="bg-white/90 backdrop-blur-md rounded-full shadow-md px-4 sm:px-8">
                  <nav class="flex justify-between items-center py-3">
                     <!-- Logo -->
-                    <div class="flex items-center space-x-2">
-                         <svg class="h-8 w-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-                        <span class="text-2xl font-bold text-gray-900">NUND</span>
+                    <div class="flex items-center">
+                         <span class="text-xl sm:text-2xl font-bold text-gray-900">NUND Global</span>
                     </div>
 
                     <!-- Desktop Navigation Links -->
                     <ul class="hidden lg:flex items-center space-x-8 text-sm font-medium">
                         <li><a href="#" class="text-gray-900 border-b-2 border-gray-900 pb-2">Home</a></li>
-                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">About</a></li>
-                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Events</a></li>
+                        <li><a href="#about" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">About</a></li>
+                        <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Projects</a></li>
                         <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Careers</a></li>
                         <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Portfolio</a></li>
                         <li><a href="#" class="text-gray-500 hover:text-gray-900 transition-colors duration-300">Blog</a></li>
                     </ul>
 
                     <!-- Right side buttons -->
-                    <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-2 sm:space-x-6">
                         <button class="hidden sm:flex items-center text-gray-500 hover:text-gray-900 transition-colors duration-300 text-sm font-medium">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-1"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
                             <span>EN</span>
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
-                        <a href="#" class="bg-gray-900 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-gray-700 transition-all duration-300 text-sm">
+                        <a href="#contact" class="bg-gray-900 text-white px-4 py-2 sm:px-5 sm:py-2.5 rounded-full font-semibold hover:bg-gray-700 transition-all duration-300 text-xs sm:text-sm">
                             Talk to us
                         </a>
                         <!-- Mobile Menu Button -->
                         <button id="mobile-menu-button" class="lg:hidden text-gray-900">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                         </button>
                     </div>
                 </nav>
@@ -67,18 +70,17 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 p-8">
             <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <svg class="h-8 w-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-                    <span class="text-2xl font-bold text-gray-900">NUND</span>
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-gray-900">NUND Global</span>
                 </div>
                 <button id="close-mobile-menu">
-                    <svg class="w-8 h-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    <svg class="w-8 h-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
                 </button>
             </div>
             <ul class="mt-16 space-y-8 text-2xl font-bold text-center">
                 <li><a href="#" class="text-gray-900">Home</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
-                <li><a href="#" class="text-gray-600 hover:text-gray-900">Events</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-gray-900">About</a></li>
+                <li><a href="#" class="text-gray-600 hover:text-gray-900">Projects</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-gray-900">Careers</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-gray-900">Portfolio</a></li>
                 <li><a href="#" class="text-gray-600 hover:text-gray-900">Blog</a></li>
@@ -88,61 +90,34 @@
 
         <!-- Main Hero Section -->
         <main class="mt-10 lg:mt-16">
-            <div class="bg-white rounded-3xl shadow-sm p-8 sm:p-12 lg:p-16">
+            <div class="bg-[#121212] rounded-3xl shadow-sm p-6 sm:p-12 lg:p-16">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <!-- Text Content -->
                     <div class="text-center lg:text-left">
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
-                            We build great <span class="text-yellow-500">digital products</span> and AI solutions.
+                        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                            Thinking about a <span style="color: #f9ef23;">website</span> for <span style="color: #f9ef23;">your business?</span>
                         </h1>
-                        <p class="mt-6 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0">
-                            We partner with enterprises, startups, and governments worldwide to develop cutting-edge technology products and Artificial Intelligence solutions that help them achieve their goals.
+                        <p class="mt-6 text-base sm:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0">
+                            We are a forward-thinking web development agency dedicated to crafting immersive and user-centric digital experiences. In a world of templates, we provide bespoke solutions. From dynamic web applications to high-performance e-commerce platforms, we leverage the latest technologies to bring your most ambitious ideas to life. At NUND Global, we don't just follow trends we set them.
                         </p>
-                        <a href="#" class="inline-block mt-10 bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">
-                            Book a free consultation &rarr;
-                        </a>
                     </div>
                     
                     <!-- Image / Graphic Content -->
-                    <div class="hidden lg:flex justify-center items-center">
-                         <div class="hexagon-pattern">
-                            <svg width="450" height="400" viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg">
-                                <defs>
-                                    <clipPath id="hexagon-clip">
-                                        <polygon points="250,0 450,115 450,335 250,450 50,335 50,115" />
-                                    </clipPath>
-                                    <pattern id="hex-pattern" patternUnits="userSpaceOnUse" width="100" height="115.47" x="0" y="0">
-                                        <g id="hexagon">
-                                            <polygon stroke-width="2" stroke="#e5e7eb" fill="rgba(255,255,255,0.8)" points="50,0 100,28.87 100,86.6 50,115.47 0,86.6 0,28.87" />
-                                        </g>
-                                    </pattern>
-                                </defs>
-                                
-                                <g opacity="0.1">
-                                    <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
-                                </g>
-
-                                <g transform="translate(40, 30)" opacity="0.2">
-                                     <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
-                                </g>
-
-                                 <g transform="translate(80, 60)" opacity="0.3">
-                                     <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
-                                </g>
-                                
-                                <g transform="translate(120, 90)" opacity="1">
-                                    <rect x="-50" y="-50" width="600" height="550" fill="url(#hex-pattern)" />
-                                </g>
-                            </svg>
-                         </div>
+                    <div class="flex justify-center items-center">
+                         <img src="https://ik.imagekit.io/wdgrhxq3oh/NUND%20web/nundyellogo2.png?updatedAt=1759157811363" alt="NUND Graphic" class="w-full max-w-xs sm:max-w-md lg:max-w-lg mx-auto">
                     </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#contact" class="inline-block bg-[#f9ef23] text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Talk to us
+                    </a>
                 </div>
             </div>
 
             <!-- "What we can build for you" section -->
             <section class="mt-24 py-16">
-                <div class="max-w-7xl mx-auto">
-                    <h2 class="text-4xl font-bold text-gray-900">What we can build for you</h2>
+                <div class="max-w-7xl mx-auto px-4 sm:px-0">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">What we can build for you</h2>
                 </div>
 
                 <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -203,69 +178,121 @@
                 </div>
             </section>
 
-            <!-- Trusted By Section -->
-            <section class="mt-16 py-16">
-                <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-900">Trusted by innovative companies</h2>
+             <!-- About Us Section -->
+            <section id="about" class="mt-24 py-16">
+                <div class="bg-white rounded-3xl shadow-sm p-8 sm:p-12 lg:p-16">
+                    <div class="relative text-center py-16 sm:py-24 rounded-3xl overflow-hidden">
+                        <img src="https://placehold.co/1200x400/e2e8f0/e2e8f0?text=." alt="Team background" class="absolute inset-0 w-full h-full object-cover opacity-30">
+                        <div class="relative">
+                            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-900 max-w-4xl mx-auto">Learn more about us, our values & how we build great software.</h2>
+                        </div>
+                    </div>
+                    <div class="mt-16">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                            <div class="md:col-span-1">
+                                <h3 class="text-4xl font-bold text-gray-900">Our Mission</h3>
+                            </div>
+                            <div class="md:col-span-2">
+                                <p class="text-xl text-gray-600 bg-gray-100 p-6 rounded-2xl">
+                                    Help businesses and governments succeed by building great tech
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 items-center">
-                    <div class="flex justify-center">
-                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo1" alt="Client Logo 1" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo2" alt="Client Logo 2" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo3" alt="Client Logo 3" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo4" alt="Client Logo 4" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo5" alt="Client Logo 5" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="https://placehold.co/120x60/f0f0f0/a0a0a0?text=Logo6" alt="Client Logo 6" class="h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300">
+            </section>
+
+             <!-- Testimonials Section -->
+            <section class="mt-16 py-16">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-12">What our customers say</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                        <!-- Testimonial 3 - Pending -->
+                        <div class="bg-gray-50 rounded-3xl shadow-sm p-8 border-2 border-dashed">
+                             <h4 class="text-xl font-bold tracking-wider text-gray-400">PENDING</h4>
+                             <p class="mt-6 text-gray-500">"A new testimonial is coming soon. Check back later to see what other amazing things our clients have to say about our work!"</p>
+                             <div class="mt-6">
+                                <p class="font-bold text-gray-400">Future Client</p>
+                                <p class="text-sm text-gray-400">Future Company</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
         </main>
 
+        <!-- Let's Talk Section -->
+        <section id="contact" class="mt-16 py-16">
+            <div class="bg-white rounded-3xl shadow-sm p-8 sm:p-12 lg:p-16">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-gray-900">Let's Talk.</h2>
+                    <p class="mt-4 text-lg text-gray-600">
+                        We have built more than 100 digital products for businesses and governments. Call us or book a meeting to talk about how you can grow your business with technology.
+                    </p>
+                    <div class="mt-10 flex flex-wrap justify-center items-center gap-4">
+                        <a href="tel:+94787866861" class="inline-flex items-center justify-center bg-[#f9ef23] text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg w-full sm:w-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-3"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81 .7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>+94 78 7866861</span>
+                        </a>
+                        <div class="flex items-center justify-center gap-4 mt-4 sm:mt-0">
+                            <a href="#" class="bg-[#f9ef23] text-gray-900 hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24" 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            </a>
+                            <a href="#" class="bg-[#f9ef23] text-gray-900 hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            </a>
+                             <a href="#" class="bg-[#f9ef23] text-gray-900 hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="#" class="bg-[#f9ef23] text-gray-900 hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                            </a>
+                            <a href="#" class="bg-[#f9ef23] text-gray-900 hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+                            <a href="#" class="bg-[#f9ef23] text-gray-900 hover:bg-[#e1d71f] transition-all duration-300 transform hover:scale-105 shadow-lg rounded-full w-12 h-12 flex items-center justify-center">
+                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8a6 6 0 0 1 6-6z"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
         <footer class="mt-16 border-t">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-600">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-gray-600">
                 <div>
-                    <div class="flex items-center space-x-2">
-                        <svg class="h-8 w-8 text-gray-900" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
-                        <span class="text-2xl font-bold text-gray-900">NUND</span>
+                    <div class="flex items-center">
+                        <span class="text-xl md:text-2xl font-bold text-gray-900">NUND Global</span>
                     </div>
-                    <p class="mt-4 text-sm">&copy; 2024 NUND. All rights reserved.</p>
+                    <p class="mt-4 text-sm">&copy; 2025 NUND Global. All rights reserved.</p>
                 </div>
                 <div>
                     <h4 class="font-semibold text-gray-900">Services</h4>
                     <ul class="mt-4 space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-yellow-500">Web Development</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">Mobile Development</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">AI Solutions</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">UI/UX Design</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">Web Development</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">Mobile Development</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">AI Solutions</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">UI/UX Design</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold text-gray-900">Company</h4>
                     <ul class="mt-4 space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-yellow-500">About Us</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">Careers</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">Blog</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">About Us</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">Careers</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">Blog</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">Contact Us</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-semibold text-gray-900">Connect</h4>
                      <ul class="mt-4 space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-yellow-500">LinkedIn</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">Twitter</a></li>
-                        <li><a href="#" class="hover:text-yellow-500">GitHub</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">Twitter</a></li>
+                        <li><a href="#" class="hover:text-[#f9ef23]">GitHub</a></li>
                     </ul>
                 </div>
             </div>
@@ -286,5 +313,4 @@
     </script>
 </body>
 </html>
-
 
